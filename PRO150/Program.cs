@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PRO150.Data;
+using PRO150.Interfaces;
 
 namespace PRO150
 {
@@ -12,6 +13,7 @@ namespace PRO150
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddTransient<IDataAccessLayer, CodenamesDAL>();
 
             var app = builder.Build();
 
