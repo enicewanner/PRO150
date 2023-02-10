@@ -27,11 +27,7 @@ namespace PRO150.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
+       
         public IActionResult RulePage()
         {
             return View();
