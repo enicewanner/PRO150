@@ -18,6 +18,11 @@ namespace PRO150.Controllers
             return View();
         }
 
+        public IActionResult GuesserScreen()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
