@@ -16,3 +16,10 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.col {
+    border: solid;
+    background-color: sandybrown;
+    color: rebeccapurple;
+    font-weight: bold;
+}
