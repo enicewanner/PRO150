@@ -27,7 +27,11 @@ namespace PRO150.Controllers
             return View();
         }
 
-       
+        public IActionResult SpyMasterScreen()
+        {
+            return View();
+        }
+
         public IActionResult RulePage()
         {
             return View();
