@@ -29,6 +29,8 @@ namespace PRO150.Controllers
 
         public IActionResult SpyMasterScreen()
         {
+            
+
             return View();
         }
 
