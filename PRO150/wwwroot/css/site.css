@@ -23,3 +23,19 @@ body {
     color: rebeccapurple;
     font-weight: bold;
 }
+
+.Black {
+    background-color: black;
+}
+
+.Red{
+    background-color: red;
+}
+
+.Blue{
+    background-color: deepskyblue;
+}
+
+.White{
+    background-color: white;
+}
