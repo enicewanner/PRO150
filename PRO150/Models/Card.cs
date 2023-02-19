@@ -7,6 +7,9 @@
         public static string[] colors = { "Red", "Blue", "White", "Black" };
 
         public static bool isAssassin = false;
+        public static bool blueComplete = false;
+        public static bool redComplete = false;
+        public static bool whiteComplete = false;
         public static int whiteColorCount = 0;
         public static int blueColorCount = 0;
         public static int redColorCount = 0;
