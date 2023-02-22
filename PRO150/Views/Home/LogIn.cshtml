@@ -1,12 +1,20 @@
 ﻿<h1>@ViewData["Title"]</h1>
 <div class="row">
-    <div class="col-12">
-        <form asp-controller="Home" asp-action="Output" method="post">
-            <label for="UserName">Username: </label>
-            <input id="UserName" type="text" name="UserName" placeholder="Username" />
-            <label for="Password"> Password: </label>
-            <input id="Password" type="text" name="Password" placeholder="Password" />
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+	<div class="col-12">
+		<form asp-controller="Home" asp-action="Output" method="post">
+			<div>
+				<label for="UserName">Username: </label>
+				<input id="UserName" type="text" name="UserName" placeholder="Username" />
+			</div>
+			<br/>
+			<div>
+			<label for="Password"> Password: </label>
+			<input id="Password" type="text" name="Password" placeholder="Password" />
+			</div>
+			<br/>
+			<div>
+			<button type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
 </div>
