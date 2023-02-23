@@ -13,13 +13,13 @@
           
             @if(!Card.isAssassin && !Card.redComplete && !Card.blueComplete && !Card.whiteComplete )
             {
-                string color = @Card.colors[Card.rand.Next(4)];
+                 Card.color1 = @Card.colors[Card.rand.Next(4)];
 
-                <div class="@color">
+                <div class="@Card.color1">
                     Column
                 </div>
 
-                switch (color)
+                switch (Card.color1)
                 {
                     case "Black":
                         Card.isAssassin = true;
@@ -51,7 +51,9 @@
             }
             else if (Card.isAssassin && Card.redComplete && Card.blueComplete && Card.whiteComplete)
             {
-                
+                <div class="@Card.color1">
+                    Column
+                </div>
             }
 
               
