@@ -4,9 +4,24 @@
     <h2>You Are A Spy Master</h2>
     </br>
 
-    <a href="GuesserTran"><button class="btn btn-primary">I've Given My Hint</button></a>
 </div>
 
+
+<form method="post" asp-controller="Home" asp-action="GuesserScreen">
+     <div class="mb-3">
+            <a href="GuesserTran"><button class="btn btn-primary" type="submit">Go to Guesser Screen</button></a>
+            </br>
+            <label asp-for="@Card.hintMsg">Give Hint</label>
+
+            <input asp-for="@Card.hintMsg" class="form-control" />
+        </div>
+         <div class="mb-3">
+            <label asp-for="@Card.hintedWords">How many words fits your hint?</label>
+
+            <input asp-for="@Card.hintedWords" class="form-control"/>
+
+        </div>
+</form>
 
 <div class="container text-center">
     <div class="row p-2">

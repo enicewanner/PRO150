@@ -22,15 +22,20 @@ namespace PRO150.Controllers
             return View();
         }
 
-        public IActionResult GuesserScreen()
+        public IActionResult GuesserScreen(string hintMsg, string hintedWords)
         {
+            ViewBag.hintMsg = hintMsg;
+            ViewBag.hintedWords = int.Parse(hintedWords);
+            
             return View();
         }
+
 
         public IActionResult SpyMasterScreen()
         {
             return View();
         }
+
 
         public IActionResult RulePage()
         {
