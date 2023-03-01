@@ -42,6 +42,7 @@
         public static string color23;
         public static string color24;
         public static string color25;
+        public static string guesserDefualtColor = "White";
 
         public static Random rand = new Random();
 
