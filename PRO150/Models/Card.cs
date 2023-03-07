@@ -12,7 +12,7 @@ namespace PRO150.Models
 
 
 
-        public static string guesserDefualtColor = "White";
+        
         public static string tempHintMsg;
         public static string tempHintCount;
         public static bool isClicked = false;
