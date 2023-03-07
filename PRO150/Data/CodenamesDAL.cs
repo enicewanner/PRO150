@@ -28,6 +28,21 @@ namespace PRO150.Data
             return db.users.Where(u => u.Username == username).FirstOrDefault();
         }
 
+        public IEnumerable<User> GetUser()
+        {
+            throw new NotImplementedException();
+        }
+
+        public User GetUser(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Word GetWord(int id)
+        {
+            return db.words.Where(m => m.Id == id).FirstOrDefault();
+        }
+
         public IEnumerable<Word> GetWords()
         {
             throw new NotImplementedException();

@@ -42,9 +42,39 @@
         public static string color23;
         public static string color24;
         public static string color25;
+
+        public static string word1 = "";
+        public static string word2;
+        public static string word3;
+        public static string word4;
+        public static string word5;
+        public static string word6;
+        public static string word7;
+        public static string word8;
+        public static string word9;
+        public static string word10;
+        public static string word11;
+        public static string word12;
+        public static string word13;
+        public static string word14;
+        public static string word15;
+        public static string word16;
+        public static string word17;
+        public static string word18;
+        public static string word19;
+        public static string word20;
+        public static string word21;
+        public static string word22;
+        public static string word23;
+        public static string word24;
+        public static string word25;
+
+
         public static string guesserDefualtColor = "White";
 
         public static Random rand = new Random();
+
+        
 
         public Card() { }
         public Card(int cardID, string color) { CardID = cardID; Color = color; }
