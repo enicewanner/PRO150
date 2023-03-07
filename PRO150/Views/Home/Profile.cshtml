@@ -1,0 +1,13 @@
+﻿@model User
+
+<h1>@TempData["Error"]</h1>
+
+@if(Model.Username != null)
+{
+	<h1>Welcome @Model.Username</h1>
+
+	<h3>Wins: @Model.Wins</h3>
+	<h3>Loses: @Model.Losses</h3>
+
+	<a asp-controller="Home" asp-action="Logout" class="btn btn-primary">Logout</a>
+}

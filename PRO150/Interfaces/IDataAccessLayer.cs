@@ -6,6 +6,9 @@ namespace PRO150.Interfaces
     public interface IDataAccessLayer
     {
         IEnumerable<Word> GetWords();
-        IEnumerable<User> AddUser(User user);
+        public User GetUser(int? id);
+        public User GetUser(string? username);
+        void AddUser(User user);
+        public bool UserExists(User user);
     }
 }

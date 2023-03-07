@@ -47,6 +47,40 @@ namespace PRO150.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Login(User user)
+        {
+            if(dal.UserExists(user))
+            {
+                return RedirectToAction("Profile", user);
+            }
+            else if(!dal.UserExists(user) && ModelState.IsValid)
+            {
+                dal.AddUser(user);
+                TempData["success"] = "User Created";
+                return RedirectToAction("Profile", user);
+            }
+            else
+            {
+                return View();
+            }
+        }
+
+        public IActionResult Logout()
+        {
+            return RedirectToAction("Login");
+        }
+
+        public IActionResult Profile(User user)
+        {
+            if(user.Username == null)
+            {
+                TempData["Error"] = "Please make an account to see stats";
+                return View(user);
+            }
+            return View(user);
+        }
+
         public IActionResult GuesserTran()
         {
             return View();
