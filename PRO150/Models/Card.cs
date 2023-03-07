@@ -10,7 +10,12 @@ namespace PRO150.Models
         public static string[] colors = { "Red", "Blue", "White", "Black" };
 
 
-       
+
+
+        public static string guesserDefualtColor = "White";
+        public static string tempHintMsg;
+        public static string tempHintCount;
+        public static bool isClicked = false;
 
         public static bool isAssassin = false;
         public static bool blueComplete = false;
@@ -48,10 +53,7 @@ namespace PRO150.Models
         public static string color24;
         public static string color25;
        
-        public static string guesserDefualtColor = "White";
-        public static string tempHintMsg;
-        public static string tempHintCount;
-        public static bool isClicked = false;
+       
 
         public static Random rand = new Random();
 
