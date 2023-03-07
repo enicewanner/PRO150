@@ -1,4 +1,6 @@
-﻿namespace PRO150.Models
+﻿using PRO150.Controllers;
+
+namespace PRO150.Models
 {
     public class Card
     {
@@ -6,6 +8,9 @@
 
         public static string Color;
         public static string[] colors = { "Red", "Blue", "White", "Black" };
+
+
+       
 
         public static bool isAssassin = false;
         public static bool blueComplete = false;
@@ -15,7 +20,7 @@
         public static int blueColorCount = 0;
         public static int redColorCount = 0;
         public static string hintMsg;
-        public static string hintedWords;
+        public static int hintedWords;
 
         public static string color1;
         public static string color2;
@@ -42,12 +47,18 @@
         public static string color23;
         public static string color24;
         public static string color25;
+       
         public static string guesserDefualtColor = "White";
+        public static string tempHintMsg;
+        public static string tempHintCount;
+        public static bool isClicked = false;
 
         public static Random rand = new Random();
 
         public Card() { }
         public Card(int cardID, string color) { CardID = cardID; Color = color; }
+
+        
         
     }
 }

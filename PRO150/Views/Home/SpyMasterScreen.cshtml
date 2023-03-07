@@ -9968,450 +9968,6 @@
 
             @if (!Card.isAssassin && !Card.redComplete && !Card.blueComplete && !Card.whiteComplete)
             {
-                Card.color23 = @Card.colors[Card.rand.Next(4)];
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-
-                switch (Card.color23)
-                {
-                    case "Black":
-                        Card.isAssassin = true;
-                        break;
-                    case "Red":
-                        Card.redColorCount++;
-                        if (Card.redColorCount == 9)
-                        {
-                            Card.redComplete = true;
-                        }
-                        break;
-                    case "Blue":
-                        Card.blueColorCount++;
-                        if (Card.blueColorCount == 8)
-                        {
-                            Card.blueComplete = true;
-                        }
-                        break;
-                    case "White":
-                        Card.whiteColorCount++;
-                        if (Card.whiteColorCount == 7)
-                        {
-                            Card.whiteComplete = true;
-                        }
-                        break;
-
-
-                }
-            }
-            else if (Card.isAssassin && !Card.redComplete && !Card.blueComplete && !Card.whiteComplete)
-            {
-                Card.color23 = @Card.colors[Card.rand.Next(3)];
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-                switch (Card.color23)
-                {
-
-                    case "Red":
-                        Card.redColorCount++;
-                        if (Card.redColorCount == 9)
-                        {
-                            Card.redComplete = true;
-                        }
-                        break;
-                    case "Blue":
-                        Card.blueColorCount++;
-                        if (Card.blueColorCount == 8)
-                        {
-                            Card.blueComplete = true;
-                        }
-                        break;
-                    case "White":
-                        Card.whiteColorCount++;
-                        if (Card.whiteColorCount == 7)
-                        {
-                            Card.whiteComplete = true;
-                        }
-                        break;
-
-
-                }
-            }
-            else if (!Card.isAssassin && Card.redComplete && !Card.blueComplete && !Card.whiteComplete)
-            {
-                Card.color23 = @Card.colors[Card.rand.Next(4)];
-                while (Card.color23.Contains("Red"))
-                {
-                    Card.color23 = @Card.colors[Card.rand.Next(4)];
-                }
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-
-                switch (Card.color23)
-                {
-                    case "Black":
-                        Card.isAssassin = true;
-                        break;
-
-                    case "Blue":
-                        Card.blueColorCount++;
-                        if (Card.blueColorCount == 8)
-                        {
-                            Card.blueComplete = true;
-                        }
-                        break;
-                    case "White":
-                        Card.whiteColorCount++;
-                        if (Card.whiteColorCount == 7)
-                        {
-                            Card.whiteComplete = true;
-                        }
-                        break;
-
-
-                }
-            }
-            else if (!Card.isAssassin && !Card.redComplete && Card.blueComplete && !Card.whiteComplete)
-            {
-                Card.color23 = @Card.colors[Card.rand.Next(4)];
-                while (Card.color23.Contains("Blue"))
-                {
-                    Card.color23 = @Card.colors[Card.rand.Next(4)];
-                }
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-
-                switch (Card.color23)
-                {
-                    case "Black":
-                        Card.isAssassin = true;
-                        break;
-                    case "Red":
-                        Card.redColorCount++;
-                        if (Card.redColorCount == 9)
-                        {
-                            Card.redComplete = true;
-                        }
-                        break;
-                    case "White":
-                        Card.whiteColorCount++;
-                        if (Card.whiteColorCount == 7)
-                        {
-                            Card.whiteComplete = true;
-                        }
-                        break;
-
-
-                }
-            }
-            else if (!Card.isAssassin && !Card.redComplete && !Card.blueComplete && Card.whiteComplete)
-            {
-                Card.color23 = @Card.colors[Card.rand.Next(4)];
-                while (Card.color23.Contains("White"))
-                {
-                    Card.color23 = @Card.colors[Card.rand.Next(4)];
-                }
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-
-                switch (Card.color23)
-                {
-                    case "Black":
-                        Card.isAssassin = true;
-                        break;
-                    case "Red":
-                        Card.redColorCount++;
-                        if (Card.redColorCount == 9)
-                        {
-                            Card.redComplete = true;
-                        }
-                        break;
-                    case "Blue":
-                        Card.blueColorCount++;
-                        if (Card.blueColorCount == 8)
-                        {
-                            Card.blueComplete = true;
-                        }
-                        break;
-
-                }
-            }
-            else if (Card.isAssassin && Card.redComplete && !Card.blueComplete && !Card.whiteComplete)
-            {
-                Card.color23 = @Card.colors[Card.rand.Next(3)];
-                while (Card.color23.Equals("Red"))
-                {
-                    Card.color23 = @Card.colors[Card.rand.Next(3)];
-
-                }
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-
-
-
-                switch (Card.color23)
-                {
-
-                    case "Blue":
-                        Card.blueColorCount++;
-                        if (Card.blueColorCount == 8)
-                        {
-                            Card.blueComplete = true;
-                        }
-                        break;
-                    case "White":
-                        Card.whiteColorCount++;
-                        if (Card.whiteColorCount == 7)
-                        {
-                            Card.whiteComplete = true;
-                        }
-                        break;
-
-
-                }
-            }
-            else if (Card.isAssassin && !Card.redComplete && Card.blueComplete && !Card.whiteComplete)
-            {
-                Card.color23 = @Card.colors[Card.rand.Next(3)];
-                while (Card.color23.Equals("Blue"))
-                {
-                    Card.color23 = @Card.colors[Card.rand.Next(3)];
-
-                }
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-
-                switch (Card.color23)
-                {
-
-                    case "Red":
-                        Card.redColorCount++;
-                        if (Card.redColorCount == 9)
-                        {
-                            Card.redComplete = true;
-                        }
-                        break;
-
-                    case "White":
-                        Card.whiteColorCount++;
-                        if (Card.whiteColorCount == 7)
-                        {
-                            Card.whiteComplete = true;
-                        }
-                        break;
-
-
-                }
-            }
-            else if (Card.isAssassin && !Card.redComplete && !Card.blueComplete && Card.whiteComplete)
-            {
-                Card.color23 = @Card.colors[Card.rand.Next(3)];
-                while (Card.color23.Equals("White"))
-                {
-                    Card.color23 = @Card.colors[Card.rand.Next(3)];
-
-                }
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-
-                switch (Card.color23)
-                {
-
-                    case "Red":
-                        Card.redColorCount++;
-                        if (Card.redColorCount == 9)
-                        {
-                            Card.redComplete = true;
-                        }
-                        break;
-                    case "Blue":
-                        Card.blueColorCount++;
-                        if (Card.blueColorCount == 8)
-                        {
-                            Card.blueComplete = true;
-                        }
-                        break;
-
-
-
-                }
-            }
-            else if (!Card.isAssassin && Card.redComplete && Card.blueComplete && !Card.whiteComplete)
-            {
-                Card.color23 = @Card.colors[Card.rand.Next(4)];
-                while (Card.color23.Equals("Red") || Card.color23.Equals("Blue"))
-                {
-                    Card.color23 = @Card.colors[Card.rand.Next(4)];
-
-                }
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-
-                switch (Card.color23)
-                {
-                    case "Black":
-                        Card.isAssassin = true;
-                        break;
-
-                    case "White":
-                        Card.whiteColorCount++;
-                        if (Card.whiteColorCount == 7)
-                        {
-                            Card.whiteComplete = true;
-                        }
-                        break;
-
-
-                }
-            }
-            else if (!Card.isAssassin && Card.redComplete && !Card.blueComplete && Card.whiteComplete)
-            {
-                Card.color23 = @Card.colors[Card.rand.Next(4)];
-                while (Card.color23.Equals("Red") || Card.color23.Equals("White"))
-                {
-                    Card.color23 = @Card.colors[Card.rand.Next(4)];
-
-                }
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-
-                switch (Card.color23)
-                {
-                    case "Black":
-                        Card.isAssassin = true;
-                        break;
-
-                    case "Blue":
-                        Card.blueColorCount++;
-                        if (Card.blueColorCount == 8)
-                        {
-                            Card.blueComplete = true;
-                        }
-                        break;
-
-
-
-                }
-            }
-            else if (!Card.isAssassin && !Card.redComplete && Card.blueComplete && Card.whiteComplete)
-            {
-                Card.color23 = @Card.colors[Card.rand.Next(4)];
-                while (Card.color23.Equals("White") || Card.color23.Equals("Blue"))
-                {
-                    Card.color23 = @Card.colors[Card.rand.Next(4)];
-
-                }
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-
-                switch (Card.color23)
-                {
-                    case "Black":
-                        Card.isAssassin = true;
-                        break;
-                    case "Red":
-                        Card.redColorCount++;
-                        if (Card.redColorCount == 9)
-                        {
-                            Card.redComplete = true;
-                        }
-                        break;
-                }
-            }
-            else if (Card.isAssassin && !Card.redComplete && Card.blueComplete && Card.whiteComplete)
-            {
-                Card.color23 = "Red";
-
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-
-                Card.redColorCount++;
-                if (Card.redColorCount == 9)
-                {
-                    Card.redComplete = true;
-                }
-
-            }
-            else if (Card.isAssassin && Card.redComplete && !Card.blueComplete && Card.whiteComplete)
-            {
-                Card.color23 = "Blue";
-
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-                Card.blueColorCount++;
-                if (Card.blueColorCount == 8)
-                {
-                    Card.blueComplete = true;
-                }
-
-            }
-            else if (Card.isAssassin && Card.redComplete && Card.blueComplete && !Card.whiteComplete)
-            {
-                Card.color23 = "White";
-
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-                Card.whiteColorCount++;
-                if (Card.whiteColorCount == 7)
-                {
-                    Card.whiteComplete = true;
-                }
-
-            }
-            else if (!Card.isAssassin && Card.redComplete && Card.blueComplete && Card.whiteComplete)
-            {
-                Card.color23 = "Black";
-
-
-                <div class="@Card.color23">
-                    Column
-                </div>
-
-
-                if (Card.color23.Contains("Black"))
-                {
-                    Card.isAssassin = true;
-                }
-            }
-            else if (Card.isAssassin && Card.redComplete && Card.blueComplete && Card.whiteComplete)
-            {
-                <div class="@Card.color23">
-                    Column
-                </div>
-            }
-
-        </div>
-        <div class="col border-2 border-primary p-5 m-3">
-
-
-            @if (!Card.isAssassin && !Card.redComplete && !Card.blueComplete && !Card.whiteComplete)
-            {
                 Card.color24 = @Card.colors[Card.rand.Next(4)];
 
                 <div class="@Card.color24">
@@ -10486,7 +10042,7 @@
             else if (!Card.isAssassin && Card.redComplete && !Card.blueComplete && !Card.whiteComplete)
             {
                 Card.color24 = @Card.colors[Card.rand.Next(4)];
-                while (Card.color24.Contains("Red"))
+                while (Card.color23.Contains("Red"))
                 {
                     Card.color24 = @Card.colors[Card.rand.Next(4)];
                 }
@@ -10661,7 +10217,7 @@
             }
             else if (Card.isAssassin && !Card.redComplete && !Card.blueComplete && Card.whiteComplete)
             {
-                Card.color24 = @Card.colors[Card.rand.Next(3)];
+                Card.color23 = @Card.colors[Card.rand.Next(3)];
                 while (Card.color24.Equals("White"))
                 {
                     Card.color24 = @Card.colors[Card.rand.Next(3)];
@@ -10697,7 +10253,7 @@
             else if (!Card.isAssassin && Card.redComplete && Card.blueComplete && !Card.whiteComplete)
             {
                 Card.color24 = @Card.colors[Card.rand.Next(4)];
-                while (Card.color24.Equals("Red") || Card.color24.Equals("Blue"))
+                while (Card.color23.Equals("Red") || Card.color23.Equals("Blue"))
                 {
                     Card.color24 = @Card.colors[Card.rand.Next(4)];
 
@@ -10757,7 +10313,7 @@
             }
             else if (!Card.isAssassin && !Card.redComplete && Card.blueComplete && Card.whiteComplete)
             {
-                Card.color24 = @Card.colors[Card.rand.Next(4)];
+                Card.color23 = @Card.colors[Card.rand.Next(4)];
                 while (Card.color24.Equals("White") || Card.color24.Equals("Blue"))
                 {
                     Card.color24 = @Card.colors[Card.rand.Next(4)];
@@ -10838,14 +10394,457 @@
                 </div>
 
 
-                if (Card.color24.Contains("Black"))
+                                
+                    Card.isAssassin = true;
+                
+            }
+            else if (Card.isAssassin && Card.redComplete && Card.blueComplete && Card.whiteComplete)
+            {
+                <div class="@Card.color24">
+                    Column
+                </div>
+            }
+
+        </div>
+        <div class="col border-2 border-primary p-5 m-3">
+
+
+            @if (!Card.isAssassin && !Card.redComplete && !Card.blueComplete && !Card.whiteComplete)
+            {
+                Card.color25 = @Card.colors[Card.rand.Next(4)];
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+
+                switch (Card.color25)
+                {
+                    case "Black":
+                        Card.isAssassin = true;
+                        break;
+                    case "Red":
+                        Card.redColorCount++;
+                        if (Card.redColorCount == 9)
+                        {
+                            Card.redComplete = true;
+                        }
+                        break;
+                    case "Blue":
+                        Card.blueColorCount++;
+                        if (Card.blueColorCount == 8)
+                        {
+                            Card.blueComplete = true;
+                        }
+                        break;
+                    case "White":
+                        Card.whiteColorCount++;
+                        if (Card.whiteColorCount == 7)
+                        {
+                            Card.whiteComplete = true;
+                        }
+                        break;
+
+
+                }
+            }
+            else if (Card.isAssassin && !Card.redComplete && !Card.blueComplete && !Card.whiteComplete)
+            {
+                Card.color25 = @Card.colors[Card.rand.Next(3)];
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+                switch (Card.color25)
+                {
+
+                    case "Red":
+                        Card.redColorCount++;
+                        if (Card.redColorCount == 9)
+                        {
+                            Card.redComplete = true;
+                        }
+                        break;
+                    case "Blue":
+                        Card.blueColorCount++;
+                        if (Card.blueColorCount == 8)
+                        {
+                            Card.blueComplete = true;
+                        }
+                        break;
+                    case "White":
+                        Card.whiteColorCount++;
+                        if (Card.whiteColorCount == 7)
+                        {
+                            Card.whiteComplete = true;
+                        }
+                        break;
+
+
+                }
+            }
+            else if (!Card.isAssassin && Card.redComplete && !Card.blueComplete && !Card.whiteComplete)
+            {
+                Card.color25 = @Card.colors[Card.rand.Next(4)];
+                while (Card.color25.Contains("Red"))
+                {
+                    Card.color25 = @Card.colors[Card.rand.Next(4)];
+                }
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+
+                switch (Card.color25)
+                {
+                    case "Black":
+                        Card.isAssassin = true;
+                        break;
+
+                    case "Blue":
+                        Card.blueColorCount++;
+                        if (Card.blueColorCount == 8)
+                        {
+                            Card.blueComplete = true;
+                        }
+                        break;
+                    case "White":
+                        Card.whiteColorCount++;
+                        if (Card.whiteColorCount == 7)
+                        {
+                            Card.whiteComplete = true;
+                        }
+                        break;
+
+
+                }
+            }
+            else if (!Card.isAssassin && !Card.redComplete && Card.blueComplete && !Card.whiteComplete)
+            {
+                Card.color25 = @Card.colors[Card.rand.Next(4)];
+                while (Card.color25.Contains("Blue"))
+                {
+                    Card.color25 = @Card.colors[Card.rand.Next(4)];
+                }
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+
+                switch (Card.color25)
+                {
+                    case "Black":
+                        Card.isAssassin = true;
+                        break;
+                    case "Red":
+                        Card.redColorCount++;
+                        if (Card.redColorCount == 9)
+                        {
+                            Card.redComplete = true;
+                        }
+                        break;
+                    case "White":
+                        Card.whiteColorCount++;
+                        if (Card.whiteColorCount == 7)
+                        {
+                            Card.whiteComplete = true;
+                        }
+                        break;
+
+
+                }
+            }
+            else if (!Card.isAssassin && !Card.redComplete && !Card.blueComplete && Card.whiteComplete)
+            {
+                Card.color25 = @Card.colors[Card.rand.Next(4)];
+                while (Card.color25.Contains("White"))
+                {
+                    Card.color25 = @Card.colors[Card.rand.Next(4)];
+                }
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+
+                switch (Card.color25)
+                {
+                    case "Black":
+                        Card.isAssassin = true;
+                        break;
+                    case "Red":
+                        Card.redColorCount++;
+                        if (Card.redColorCount == 9)
+                        {
+                            Card.redComplete = true;
+                        }
+                        break;
+                    case "Blue":
+                        Card.blueColorCount++;
+                        if (Card.blueColorCount == 8)
+                        {
+                            Card.blueComplete = true;
+                        }
+                        break;
+
+                }
+            }
+            else if (Card.isAssassin && Card.redComplete && !Card.blueComplete && !Card.whiteComplete)
+            {
+                Card.color25 = @Card.colors[Card.rand.Next(3)];
+                while (Card.color25.Equals("Red"))
+                {
+                    Card.color25 = @Card.colors[Card.rand.Next(3)];
+
+                }
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+
+
+
+                switch (Card.color25)
+                {
+
+                    case "Blue":
+                        Card.blueColorCount++;
+                        if (Card.blueColorCount == 8)
+                        {
+                            Card.blueComplete = true;
+                        }
+                        break;
+                    case "White":
+                        Card.whiteColorCount++;
+                        if (Card.whiteColorCount == 7)
+                        {
+                            Card.whiteComplete = true;
+                        }
+                        break;
+
+
+                }
+            }
+            else if (Card.isAssassin && !Card.redComplete && Card.blueComplete && !Card.whiteComplete)
+            {
+                Card.color25 = @Card.colors[Card.rand.Next(3)];
+                while (Card.color25.Equals("Blue"))
+                {
+                    Card.color25 = @Card.colors[Card.rand.Next(3)];
+
+                }
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+
+                switch (Card.color25)
+                {
+
+                    case "Red":
+                        Card.redColorCount++;
+                        if (Card.redColorCount == 9)
+                        {
+                            Card.redComplete = true;
+                        }
+                        break;
+
+                    case "White":
+                        Card.whiteColorCount++;
+                        if (Card.whiteColorCount == 7)
+                        {
+                            Card.whiteComplete = true;
+                        }
+                        break;
+
+
+                }
+            }
+            else if (Card.isAssassin && !Card.redComplete && !Card.blueComplete && Card.whiteComplete)
+            {
+                Card.color25 = @Card.colors[Card.rand.Next(3)];
+                while (Card.color25.Equals("White"))
+                {
+                    Card.color25 = @Card.colors[Card.rand.Next(3)];
+
+                }
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+
+                switch (Card.color25)
+                {
+
+                    case "Red":
+                        Card.redColorCount++;
+                        if (Card.redColorCount == 9)
+                        {
+                            Card.redComplete = true;
+                        }
+                        break;
+                    case "Blue":
+                        Card.blueColorCount++;
+                        if (Card.blueColorCount == 8)
+                        {
+                            Card.blueComplete = true;
+                        }
+                        break;
+
+
+
+                }
+            }
+            else if (!Card.isAssassin && Card.redComplete && Card.blueComplete && !Card.whiteComplete)
+            {
+                Card.color25 = @Card.colors[Card.rand.Next(4)];
+                while (Card.color25.Equals("Red") || Card.color25.Equals("Blue"))
+                {
+                    Card.color25 = @Card.colors[Card.rand.Next(4)];
+
+                }
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+
+                switch (Card.color25)
+                {
+                    case "Black":
+                        Card.isAssassin = true;
+                        break;
+
+                    case "White":
+                        Card.whiteColorCount++;
+                        if (Card.whiteColorCount == 7)
+                        {
+                            Card.whiteComplete = true;
+                        }
+                        break;
+
+
+                }
+            }
+            else if (!Card.isAssassin && Card.redComplete && !Card.blueComplete && Card.whiteComplete)
+            {
+                Card.color25 = @Card.colors[Card.rand.Next(4)];
+                while (Card.color25.Equals("Red") || Card.color25.Equals("White"))
+                {
+                    Card.color25 = @Card.colors[Card.rand.Next(4)];
+
+                }
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+
+                switch (Card.color25)
+                {
+                    case "Black":
+                        Card.isAssassin = true;
+                        break;
+
+                    case "Blue":
+                        Card.blueColorCount++;
+                        if (Card.blueColorCount == 8)
+                        {
+                            Card.blueComplete = true;
+                        }
+                        break;
+
+
+
+                }
+            }
+            else if (!Card.isAssassin && !Card.redComplete && Card.blueComplete && Card.whiteComplete)
+            {
+                Card.color25 = @Card.colors[Card.rand.Next(4)];
+                while (Card.color25.Equals("White") || Card.color25.Equals("Blue"))
+                {
+                    Card.color25 = @Card.colors[Card.rand.Next(4)];
+
+                }
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+
+                switch (Card.color25)
+                {
+                    case "Black":
+                        Card.isAssassin = true;
+                        break;
+                    case "Red":
+                        Card.redColorCount++;
+                        if (Card.redColorCount == 9)
+                        {
+                            Card.redComplete = true;
+                        }
+                        break;
+                }
+            }
+            else if (Card.isAssassin && !Card.redComplete && Card.blueComplete && Card.whiteComplete)
+            {
+                Card.color25 = "Red";
+
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+
+                Card.redColorCount++;
+                if (Card.redColorCount == 9)
+                {
+                    Card.redComplete = true;
+                }
+
+            }
+            else if (Card.isAssassin && Card.redComplete && !Card.blueComplete && Card.whiteComplete)
+            {
+                Card.color25 = "Blue";
+
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+                Card.blueColorCount++;
+                if (Card.blueColorCount == 8)
+                {
+                    Card.blueComplete = true;
+                }
+
+            }
+            else if (Card.isAssassin && Card.redComplete && Card.blueComplete && !Card.whiteComplete)
+            {
+                Card.color25 = "White";
+
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+                Card.whiteColorCount++;
+                if (Card.whiteColorCount == 7)
+                {
+                    Card.whiteComplete = true;
+                }
+
+            }
+            else if (!Card.isAssassin && Card.redComplete && Card.blueComplete && Card.whiteComplete)
+            {
+                Card.color25 = "Black";
+
+
+                <div class="@Card.color25">
+                    Column
+                </div>
+
+
+                if (Card.color25.Contains("Black"))
                 {
                     Card.isAssassin = true;
                 }
             }
             else if (Card.isAssassin && Card.redComplete && Card.blueComplete && Card.whiteComplete)
             {
-                <div class="@Card.color24">
+                <div class="@Card.color25">
                     Column
                 </div>
             }

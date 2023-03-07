@@ -2,13 +2,22 @@
 using PRO150.Models;
 using PRO150.Interfaces;
 using System.Diagnostics;
+using System.Drawing;
+using System.Windows.Input;
+using System.Windows.Markup;
+using System.Windows;
+
+
 
 namespace PRO150.Controllers
 {
+   
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
         IDataAccessLayer dal;
+       
 
 
         public HomeController(ILogger<HomeController> logger, IDataAccessLayer indal)
@@ -22,16 +31,36 @@ namespace PRO150.Controllers
             return View();
         }
 
-        public IActionResult GuesserScreen(string hintMsg, string hintedWords)
+
+        public IActionResult GuesserScreen(string? hintMsg, string? hintedWords)
         {
-            ViewBag.hintMsg = hintMsg;
-            ViewBag.hintedWords = int.Parse(hintedWords);
+            if (!String.IsNullOrEmpty(hintMsg) && !String.IsNullOrEmpty(hintedWords))
+            {
+                Card.hintMsg = hintMsg;
+                Card.hintedWords = int.Parse(hintedWords);              
+            }
+
+            if(Card.isClicked)
+            {
+                  Console.Write("FUCK YES IT WORKED");       
+            }
+
+                
+
+            
             
             return View();
         }
 
 
-        public IActionResult SpyMasterScreen()
+        public static object ColorChange(object sender)
+        {
+           Console.WriteLine(sender.GetType().Name);
+            return sender;
+        }
+
+
+		public IActionResult SpyMasterScreen()
         {
             return View();
         }
